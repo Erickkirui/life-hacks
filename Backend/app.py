@@ -11,12 +11,13 @@ from flask_cors import CORS
 db = SQLAlchemy()
 app = Flask(__name__)
 CORS(app)
-jwt = JWTManager()
+
 
 
 
 def initializing_models():
-    pass
+    from Server.Models.chaets import CHEATS
+    from Server.Models.Reply import Reply
     
 
 def initializing_views():
@@ -33,7 +34,6 @@ def create_app(config_name):
     # Initialize the db with the app
     db.init_app(app)
     migrate = Migrate(app, db)
-    jwt.init_app(app)
     
      # Create or upgrade the database schema
     with app.app_context():

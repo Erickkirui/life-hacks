@@ -1,6 +1,7 @@
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import func
 from sqlalchemy.orm import validates
+from Server.Models.Reply import Reply
 
 import re
 from app import db 
@@ -16,7 +17,7 @@ class CHEATS(db.Model):
     reports = db.Column(db.Integer, default=0)
 
     # Relationship
-    replies = relationship("Reply", back_populates="cheat")
+    replies = db.relationship(Reply, backref='cheats')
 
 
     @validates('username')
