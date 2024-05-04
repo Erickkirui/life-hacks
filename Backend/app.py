@@ -13,15 +13,15 @@ app = Flask(__name__)
 CORS(app)
 
 
-
-
 def initializing_models():
     from Server.Models.chaets import CHEATS
     from Server.Models.Reply import Reply
     
 
 def initializing_views():
-    pass
+    from Server.Views import api_endpoints
+    app.register_blueprint(api_endpoints)
+
 
 def create_app(config_name):
     app.config.from_object(config_name)
