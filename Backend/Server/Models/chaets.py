@@ -15,6 +15,10 @@ class CHEATS(db.Model):
     dislikes = db.Column(db.Integer, default=0)
     reports = db.Column(db.Integer, default=0)
 
+    # Relationship
+    replies = relationship("Reply", back_populates="cheat")
+
+
     @validates('username')
     def validate_username(self, key, username):
         # Validate username length
@@ -28,6 +32,8 @@ class CHEATS(db.Model):
         if len(hack) < 5:
             raise ValueError("Hack must be at least 5 characters long.")
         return hack
+
+
 
     def __repr__(self):
         return f"<CHEATS(id={self.id}, hack='{self.hack}', username='{self.username}', likes={self.likes}, dislikes={self.dislikes}, reports={self.reports})>"
