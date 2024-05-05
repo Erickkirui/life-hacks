@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Tabs.css';
+import './tabs.css'
 
 function Tabs() {
   // State to keep track of the active tab
