@@ -62,3 +62,30 @@
     text-wrap: balance;
     font-size: 1.2rem;
 }
+
+.cheat-card{
+ margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 6px;
+    border: solid 1px #ccc;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow */
+    text-wrap: balance;
+
+}
+.card-container{
+  display: flex;
+  justify-content: space-between;
+}
+.card-actions-side{
+  display: grid;
+  gap: 5px;
+  width: 20%;
+}
+.cheat-info{
+  display: flex;
+  gap: 10px;
+}
+.cheat-info p{
+  color: #ccc;
+  padding-left: 5px;
+}
