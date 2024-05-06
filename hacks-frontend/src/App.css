@@ -18,7 +18,7 @@
     align-items: center; /* Updated from place-items to align-items */
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    width: 50%;
     padding: 5px;
     border-radius: 6px;
     border: solid 1px #ccc;
@@ -49,19 +49,41 @@
     place-items: center;
     text-align: center;
     margin-top: 50px;
+    border-bottom: 1px solid #ccc;
   
   }
-  
-.home-container h1{
-    font-size: 3.5rem;
+
+  .home-container img{
+    object-fit: contain;
+    width: 700px;
+    height: 200px;
+  }
+/* .home-container h1{
+    font-size: 4.5rem;
     color: var(--secondary);
     margin: 2px;
   }
+*/
+.home-container h4{
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  margin: 0;
+  color: #ccc;
+ 
+} 
 
 .home-container p{
     text-wrap: balance;
     font-size: 1.2rem;
 }
+
+.tabs-home-container{
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
 
 .cheat-card{
  margin-bottom: 15px;
@@ -95,7 +117,7 @@
   font: 14px;
   padding: 5px;
   border-radius: 6px;
-  background-color: var(--secondary);
+  background-color: var(--primary);
   color: white;
 
 }

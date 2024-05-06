@@ -5,15 +5,16 @@ function Homepage() {
   return (
     <div >
       <div className='home-container'>
-        <h1>Community-sourced Life Hacks</h1>
+        <h4>COMMINITY-SOURCED </h4>
+        <img src='images/lifehacklogo.jpg' alt="life hack" />
         <p>Welcome to our treasure trove of community sourced Life Hacks!
             Here, <br></br>you'll find ingenious solutions an clever shortcuts contributed by peaople 
             just like you
         </p>
       </div>
-      <div>
-        <Tabs />
-    </div>
+        <div  className='tabs-home-container'>
+          <Tabs />
+       </div>
     </div>
   )
 }
