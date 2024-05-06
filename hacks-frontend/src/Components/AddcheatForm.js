@@ -18,9 +18,10 @@ function AddCheatForm() {
   };
 
   return (
-    <div>
+    <div className='post-form-container'>
+      <h1>What that One hack in life that helps daily?</h1>
       <form onSubmit={handleSubmit}>
-        <label htmlFor="hack">Hack Description:</label><br />
+        <label htmlFor="hack">Hack :</label><br />
         <textarea id="hack" name="hack" value={hack} onChange={(e) => setHack(e.target.value)} /><br />
         <label htmlFor="username">Username:</label><br />
         <input type="text" id="username" name="username" value={username} onChange={(e) => setUsername(e.target.value)} /><br /><br />

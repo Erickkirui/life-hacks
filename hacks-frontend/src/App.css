@@ -159,3 +159,39 @@
   height: auto; /* Maintain aspect ratio */
   margin-right: 5px; /* Add space between the image and text */
 }
+
+.post-form-container{
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+.post-form-container input{
+  border:  1px solid #ccc;
+  border-radius: 6px;
+  padding: 10px;
+  width: 100%;
+}
+
+.post-form-container textarea{
+  min-height: 130px;
+  border:  1px solid #ccc;
+  border-radius: 6px;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 30px;
+
+}
+
+.post-form-container button{
+  background-color: var(--primary);
+  padding: 10px;
+  border:  1px solid #ccc;
+  min-width: 20%;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 16px;
+
+}
