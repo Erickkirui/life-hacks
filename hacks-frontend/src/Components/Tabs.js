@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './tabs.css'
+import Singlehack from './Singlehack';
 
 function Tabs() {
   // State to keep track of the active tab
@@ -37,7 +38,7 @@ function Tabs() {
       {/* Tab content */}
       <div className="tab-content">
         {/* Render content based on active tab */}
-        {activeTab === 1 && <div>Content for Tab 1</div>}
+        {activeTab === 1 && <div><Singlehack /></div>}
         {activeTab === 2 && <div>Content for Tab 2</div>}
         {activeTab === 3 && <div>Content for Tab 3</div>}
       </div>
