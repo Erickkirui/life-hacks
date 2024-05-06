@@ -119,10 +119,33 @@ const NewCheats = () => {
               </div>
             </div>
             <div className='card-actions-side'>
-              <button type='button' disabled={likedCheats.includes(cheat.id)} onClick={() => handleLike(cheat.id)}> Like</button>
-              <button type='button' disabled={dislikedCheats.includes(cheat.id)} onClick={() => handleDislike(cheat.id)}>Dislike</button>
-              <button type='button' disabled={reportedCheats.includes(cheat.id)} onClick={() => handleReport(cheat.id)}>Report</button>
-            </div>
+                    <button
+                      type='button'
+                      disabled={likedCheats.includes(cheat.id)}
+                      onClick={() => handleLike(cheat.id)}
+                      className="like-button"
+                    >
+                    <div className="button-content">
+                      <img src="hack.jpg" alt="Like Icon" className="button-icon" />
+                      Hack
+                    </div>
+                  </button>
+
+                  <button
+                    type='button'
+                    disabled={dislikedCheats.includes(cheat.id)}
+                    onClick={() => handleDislike(cheat.id)}
+                    className="dislike-button"
+                  >
+                    <div className="button-content">
+                      <img src="wack.webp" alt="Dislike Icon" className="button-icon" />
+                      Wack
+                    </div>
+                  </button>
+
+                    <p type='button' disabled={reportedCheats.includes(cheat.id)} onClick={() => handleReport(cheat.id)}>report</p>
+                    
+              </div>
           </div>
         </div>
       ))}

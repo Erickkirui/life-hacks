@@ -8,7 +8,7 @@ function Homepage() {
         <h4>COMMINITY-SOURCED </h4>
         <img src='images/lifehacklogo.jpg' alt="life hack" />
         <p>Welcome to our treasure trove of community sourced Life Hacks!
-            Here, <br></br>you'll find ingenious solutions an clever shortcuts contributed by peaople 
+            Here, <br></br>you'll find ingenious solutions and clever shortcuts contributed by peaople 
             just like you
         </p>
       </div>

@@ -121,3 +121,37 @@
   color: white;
 
 }
+
+.card-actions-side img{
+  object-fit: contain;
+  width: 40px;
+  height: 40px;
+
+
+}
+
+
+.like-button, .dislike-button {
+  /* Button styles */
+  /* Green for like, you can adjust color */
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 5px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  /* margin: 4px 2px; */
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.button-content {
+  display: flex;
+  align-items: center;
+}
+
+.button-icon {
+  width: 20px; /* Adjust the width of the image */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 5px; /* Add space between the image and text */
+}
