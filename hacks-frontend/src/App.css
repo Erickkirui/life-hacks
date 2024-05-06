@@ -86,6 +86,16 @@
   gap: 10px;
 }
 .cheat-info p{
-  color: #ccc;
-  padding-left: 5px;
+  font-size: 14px;
+  margin-top: 28px;
+ 
+}
+.cheat-card h4{
+  border: solid 1px #ccc;
+  font: 14px;
+  padding: 5px;
+  border-radius: 6px;
+  background-color: var(--secondary);
+  color: white;
+
 }

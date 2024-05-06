@@ -25,6 +25,50 @@ class AddCheat(Resource):
 
         return {'message': 'Cheat added successfully.', 'cheat_id': new_cheat.id}, 201
 
+class UpdateCheat(Resource):
+    def put(self, cheat_id):
+        data = request.get_json()
+
+        # Retrieving the cheat object
+        cheat = CHEATS.query.get(cheat_id)
+
+        if cheat:
+            # Updating cheat data
+            if 'hack' in data:
+                cheat.hack = data['hack']
+            if 'username' in data:
+                cheat.username = data['username']
+            
+            # Incrementing likes count
+            if 'likes' in data:
+                cheat.likes += 1
+
+            # Incrementing dislikes count
+            if 'dislikes' in data:
+                cheat.dislikes += 1
+            
+            # Incrementing reports count
+            if 'reports' in data:
+                cheat.reports += 1
+
+            db.session.commit()
+
+            return {'message': 'Cheat updated successfully.'}, 200
+        else:
+            return {'message': 'Cheat not found.'}, 404
+
+
+    def delete(self, cheat_id):
+        # Retrieving the cheat object
+        cheat = CHEATS.query.get(cheat_id)
+
+        if cheat:
+            db.session.delete(cheat)
+            db.session.commit()
+            return {'message': 'Cheat deleted successfully.'}, 200
+        else:
+            return {'message': 'Cheat not found.'}, 404
+
 class GetCheatsByTime(Resource):
     def get(self):
         # Retrieve all cheats ordered by the latest created cheats being on top
