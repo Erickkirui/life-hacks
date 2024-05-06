@@ -4,6 +4,7 @@ function Navbar() {
   return (
     <div className='navbar-container'>
         <div>  
+          
             <button>ADD CHEAT</button>
         </div>
         <div>

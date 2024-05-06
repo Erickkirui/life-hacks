@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Homepage from './Pages/Homepage';
 import Navbar from './Components/Navbar'; // Import Navbar component
+import Addcheat from './Pages/Addcheat';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Homepage />} />
+          <Route path="/postcheat" element={<Addcheat />} />
         </Routes>
       </Router>
     </div>
