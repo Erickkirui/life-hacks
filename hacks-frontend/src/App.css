@@ -76,7 +76,7 @@
 
 
 .cheat-card{
- margin-bottom: 15px;
+ margin-bottom: 20px;
   padding: 10px;
   border-radius: 6px;
     border: solid 1px #ccc;
@@ -86,14 +86,14 @@
    
 }
 .card-container{
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 80% 20%;
+  font-size: 16px;
+  
 }
 .card-actions-side{
   display: grid;
   gap: 5px;
-  width: 30%;
-  height: 50%;
   margin-top: auto;
   margin-bottom: auto;
 }
@@ -122,6 +122,10 @@
   height: 40px;
 
 
+}
+.card-actions-side p{
+  text-align: right;
+    opacity: 41%;
 }
 
 
@@ -175,6 +179,9 @@
   margin-bottom: 30px;
 
 }
+.post-form-container span{
+  color: red;
+}
 
 .post-form-container button{
   background-color: var(--primary);
@@ -222,5 +229,64 @@
  letter-spacing: 1.14px;
  font-size: 20px;
   color: black;
+
+}
+
+.pagination li{
+  list-style: none;
+  display: flex ;
+  gap: 5px;
+}
+.pagination button{
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 5px;
+  font-size: 16px;
+
+}
+
+
+@media only screen and (max-width: 980px) {
+  .tabs-home-container {
+    width: 100%;
+  }
+  .home-container img {
+  object-fit: contain;
+  width: 230px;
+  height: 115px;
+
+}
+.navbar-container{
+  width: 100%;
+}
+.home-container p {
+  font-size:1rem ;
+}
+.card-container h3{
+  font-size: 16px;
+} 
+.card-container{
+  display: grid;
+  grid-template-columns: 1fr ;
+}
+.card-actions-side {
+  display: flex;
+  gap: 12px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.navbar-left a {
+  font-size: 14px;
+}
+.post-form-container{
+  width: 90%;
+}
+.post-form-container a{
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--primary);
+}
+
 
 }

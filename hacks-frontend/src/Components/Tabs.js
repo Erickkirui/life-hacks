@@ -43,7 +43,7 @@ function Tabs() {
           className={activeTab === 3 ? 'active' : ''}
           onClick={() => handleTabClick(3)}
         >
-          Tab 3
+          Regulations
         </button>
       </div>
 
