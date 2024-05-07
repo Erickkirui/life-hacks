@@ -9,10 +9,11 @@ function App() {
   return (
     <div className="App">
       {/* Navbar */}
-      <Navbar />
+      
       
       {/* Router for page navigation */}
       <Router>
+      <Navbar />
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/postcheat" element={<Addcheat />} />

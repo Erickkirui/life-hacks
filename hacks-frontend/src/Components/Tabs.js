@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import './tabs.css';
 import HotHacks from './HotHacks';
 import NewCheats from './NewCheats';
+import { FlameKindling ,PackagePlus } from 'lucide-react'
+
 
 function Tabs() {
   // Retrieve active tab from local storage or default to tab 1
@@ -29,13 +31,13 @@ function Tabs() {
           className={activeTab === 1 ? 'active' : ''}
           onClick={() => handleTabClick(1)}
         >
-          Hot hacks
+           <FlameKindling />   Hot hacks
         </button>
         <button
           className={activeTab === 2 ? 'active' : ''}
           onClick={() => handleTabClick(2)}
         >
-          New Hacks
+           <PackagePlus /> New Hacks
         </button>
         <button
           className={activeTab === 3 ? 'active' : ''}

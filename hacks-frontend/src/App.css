@@ -5,7 +5,7 @@
 
 *{
     font-family: 'Mada';
-  }
+}
 
 :root {
     --primary: #fccb28;
@@ -25,17 +25,7 @@
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow */
 }
 
-.navbar-container button{
-    background-color: var(--primary);
-    padding: 10px;
-    width: 80%;
-    font-size: 17px;
-    border: none;
-    border-radius: 3px;
-    margin-left:50px ;
-    font-weight: 600;
-    letter-spacing: 1.14px;
-}
+
 .navbar-container img{
     object-fit: contain;
     width: 171px;
@@ -92,7 +82,8 @@
     border: solid 1px #ccc;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow */
     text-wrap: balance;
-
+    background-color: #ffffff;
+   
 }
 .card-container{
   display: flex;
@@ -193,5 +184,43 @@
   border-radius: 6px;
   font-weight: bold;
   font-size: 16px;
+
+}
+
+
+.navbar-left{
+  display: flex;
+  gap: 6px;
+  padding: 10px;
+  font-size: 17px;
+  border: none;
+  border-radius: 3px;
+  margin-left:50px ;
+  font-weight: 600;
+  letter-spacing: 1.14px;
+  background-position-x: left 10px;
+  background-color: var(--primary);
+}
+.navbar-left:hover{
+  background-color: white;
+  border: 1px #ccc solid;
+}
+.navbar-left button{
+ 
+  border: none;
+  font-size: 1rem;
+  height: 25px;
+  background-color: var(--primary);
+ 
+  
+}
+.navbar-left button:hover{
+  background-color: #ffffff;
+}
+.navbar-left a{
+  text-decoration: none;
+ letter-spacing: 1.14px;
+ font-size: 20px;
+  color: black;
 
 }
