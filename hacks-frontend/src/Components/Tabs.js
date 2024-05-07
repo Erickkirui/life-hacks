@@ -3,6 +3,7 @@ import './tabs.css';
 import HotHacks from './HotHacks';
 import NewCheats from './NewCheats';
 import { FlameKindling ,PackagePlus } from 'lucide-react'
+import Regulations from './Regulations';
 
 
 function Tabs() {
@@ -52,7 +53,7 @@ function Tabs() {
         {/* Render content based on active tab */}
         {activeTab === 1 && <div><HotHacks /></div>}
         {activeTab === 2 && <div><NewCheats/></div>}
-        {activeTab === 3 && <div>Content for Tab 3</div>}
+        {activeTab === 3 && <div><Regulations /></div>}
       </div>
     </div>
   );
