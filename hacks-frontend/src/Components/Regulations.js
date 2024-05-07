@@ -15,7 +15,8 @@ function Regulations() {
         <li>No spam or irrelevant content: Please keep your posts relevant to the platform's theme and avoid spamming.</li>
       </ul>
       <p>
-        Violation of these guidelines may result in the removal of content and/or suspension of your account. Thank you for helping us maintain a positive and inclusive community!
+        Violation of these guidelines may result in the removal of content  Thank you for helping us maintain a positive and inclusive community!
+        hacks with more than 100 reports will be outomatically deleted
       </p>
     </div>
   );
