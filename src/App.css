@@ -300,3 +300,12 @@
   text-align: center;
   margin-bottom: 5px;
 }
+
+.loading-icon {
+  animation: spin 2s linear infinite; /* Apply rotation animation */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
