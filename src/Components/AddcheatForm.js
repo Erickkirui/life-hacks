@@ -13,12 +13,12 @@ function AddCheatForm() {
 
     try {
       const response = await axios.post('/api/addcheat', { hack, username });
-      setMessage(`Cheat added successfully! Cheat ID: ${response.data.cheat_id}`);
+      setMessage(`Your clever idea has been spread like party confetti, making mischief everywhere! 🎉🎊`);
       // Clear form fields after successful submission
       setHack('');
       setUsername('');
     } catch (error) {
-      setMessage(`Error adding cheat: ${error.response.data.message}`);
+      setMessage(`You did something wrong the site works perfectly (try a longer name)`);
     }
   };
 
@@ -27,7 +27,10 @@ function AddCheatForm() {
       <p><ChevronLeft /> <Link to="/">Back</Link></p>
       <h1>What that One hack in life that helps daily?</h1>
       <p> Make sure you follow all rules and regulation befor posting a hack. <span>No login required</span></p>
-      {message && <p>{message}</p>}
+      <div className='widom'>
+       {message && <p>{message}</p>}
+      </div>
+      
       <form onSubmit={handleSubmit}>
         <label htmlFor="hack">Hack :</label><br />
         <textarea id="hack" name="hack" value={hack} onChange={(e) => setHack(e.target.value)} /><br />

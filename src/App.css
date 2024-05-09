@@ -290,3 +290,13 @@
 
 
 }
+
+.widom p{
+  border: 1px solid #ccc;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 6px;
+  background-color: var(--primary);
+  text-align: center;
+  margin-bottom: 5px;
+}
