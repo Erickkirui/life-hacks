@@ -1,6 +1,6 @@
 [[redirects]]
-from = "/ngoconnect/*"
-to = "http://16.16.211.190/ngoconnect/:splat"
+from = "/api/*"
+to = "http://51.20.6.8/api/:splat"
 status = 200
 
 [[redirects]]
