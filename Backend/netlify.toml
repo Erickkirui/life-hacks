@@ -1,0 +1,10 @@
+[[redirects]]
+from = "/ngoconnect/*"
+to = "http://16.16.211.190/ngoconnect/:splat"
+status = 200
+
+[[redirects]]
+from = "/*"
+to= "/index.html"
+status = 200
+
